@@ -6,18 +6,24 @@
   .container {
     width: 1400px;
     padding: 50px 0px;
+    background-color: #b2ebf2; // Light Cyan
 
     .title {
       display: flex;
       justify-content: space-between;
 
       button {
-        background-color: #1dbf73;
+        background-color: #00bcd4; // Cyan
         color: white;
         font-weight: 500;
         border: none;
         padding: 10px;
         cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0097a7; // Darker Cyan
+        }
       }
     }
 
@@ -44,11 +50,12 @@
           .delete {
             width: 20px;
             cursor: pointer;
+            color: #00bcd4; // Cyan
           }
 
         }
         &:nth-child(even) {
-          background-color: #1dbf730f;
+          background-color: #b2ebf230; // Light Cyan with opacity
         }
       }
     }

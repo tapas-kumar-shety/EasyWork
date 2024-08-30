@@ -47,38 +47,42 @@ function Register() {
     <div className="register">
       <form onSubmit={handleSubmit}>
         <div className="left">
-          <h1>Create a new account</h1>
+          <h1>Register for a new Account</h1>
           <label htmlFor="">Username</label>
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Enter Your Name..."
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
           <input
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="Enter Your Email..."
             onChange={handleChange}
           />
           <label htmlFor="">Password</label>
-          <input name="password" type="password" onChange={handleChange} />
+         
+          <input name="password" type="password" placeholder="Enter Your Password..."onChange={handleChange} />
+          <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm Your password..." />
           <label htmlFor="">Profile Picture</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
           <label htmlFor="">Country</label>
           <input
             name="country"
             type="text"
-            placeholder="Usa"
+            placeholder="Enter Your Country..."
             onChange={handleChange}
           />
+          
           <button type="submit">Register</button>
         </div>
         <div className="right">
-          <h1>I want to become a seller</h1>
+          <h1>Register as a Seller</h1>
           <div className="toggle">
-            <label htmlFor="">Activate the seller account</label>
+            <label htmlFor="">Activate Your Store</label>
             <label className="switch">
               <input type="checkbox" onChange={handleSeller} />
               <span className="slider round"></span>
@@ -88,7 +92,7 @@ function Register() {
           <input
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="Enter Your Phone Number..."
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>

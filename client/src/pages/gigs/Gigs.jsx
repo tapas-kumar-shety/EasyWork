@@ -43,17 +43,16 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
-        <h1>AI Artists</h1>
+        <h1><b>Algorithmic Artists</b></h1>
         <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
+          Would you like to know more about specific AI techniques used by fiber's artists,or perhaps dicuss the ethical implications of AI-generated art
         </p>
         <div className="menu">
           <div className="left">
-            <span>Budget</span>
+            <span><i>Spending plan</i></span>
             <input ref={minRef} type="number" placeholder="min" />
             <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <button onClick={apply}>Put on</button>
           </div>
           <div className="right">
             <span className="sortBy">Sort by</span>
@@ -64,9 +63,9 @@ function Gigs() {
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (
-                  <span onClick={() => reSort("createdAt")}>Newest</span>
+                  <span onClick={() => reSort("createdAt")}>Latest</span>
                 ) : (
-                  <span onClick={() => reSort("sales")}>Best Selling</span>
+                  <span onClick={() => reSort("sales")}>Most Popular</span>
                 )}
                 <span onClick={() => reSort("sales")}>Popular</span>
               </div>
@@ -85,4 +84,4 @@ function Gigs() {
   );
 }
 
-export default Gigs;
+export default Gigs;

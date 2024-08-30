@@ -39,15 +39,14 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">fiverr</span>
+            <span className="text">Easy<span className="midtext">Work</span></span>
           </Link>
-          <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>Fiverr Business</span>
+          <span>About Us</span>
           <span>Explore</span>
           <span>English</span>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {!currentUser?.isSeller && <span>Want to Hire ?</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
@@ -80,7 +79,7 @@ function Navbar() {
             <>
               <Link to="/login" className="link">Sign in</Link>
               <Link className="link" to="/register">
-                <button>Join</button>
+                <button><span class="joinbtn">Join Us</span></button>
               </Link>
             </>
           )}
@@ -91,31 +90,31 @@ function Navbar() {
           <hr />
           <div className="menu">
             <Link className="link menuLink" to="/">
-              Graphics & Design
-            </Link>
-            <Link className="link menuLink" to="/">
-              Video & Animation
-            </Link>
-            <Link className="link menuLink" to="/">
-              Writing & Translation
-            </Link>
-            <Link className="link menuLink" to="/">
-              AI Services
-            </Link>
-            <Link className="link menuLink" to="/">
-              Digital Marketing
-            </Link>
-            <Link className="link menuLink" to="/">
-              Music & Audio
-            </Link>
-            <Link className="link menuLink" to="/">
               Programming & Tech
             </Link>
             <Link className="link menuLink" to="/">
-              Business
+              Editing
             </Link>
             <Link className="link menuLink" to="/">
-              Lifestyle
+              Art & Craft
+            </Link>
+            <Link className="link menuLink" to="/">
+              Legal Services
+            </Link>
+            <Link className="link menuLink" to="/">
+              Lifestyle & Wellness
+            </Link>
+            <Link className="link menuLink" to="/">
+              Business & Marketing
+            </Link>
+            <Link className="link menuLink" to="/">
+              Graphics & Animation
+            </Link>
+            <Link className="link menuLink" to="/">
+              Gaming
+            </Link>
+            <Link className="link menuLink" to="/">
+            Health & Medical
             </Link>
           </div>
           <hr />

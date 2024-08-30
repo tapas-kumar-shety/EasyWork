@@ -23,27 +23,37 @@ function Login() {
 
   return (
     <div className="login">
+      
       <form onSubmit={handleSubmit}>
-        <h1>Sign in</h1>
+        <h1><i>Sign in</i></h1>
         <label htmlFor="">Username</label>
         <input
           name="username"
           type="text"
-          placeholder="kirito"
+          placeholder="username"
           onChange={(e) => setUsername(e.target.value)}
-        />
+       required />
 
         <label htmlFor="">Password</label>
         <input
           name="password"
           type="password"
+          placeholder="Enter Your Password"
+
           onChange={(e) => setPassword(e.target.value)}
-        />
+        required/>
+        <div className="remember-forget">
+          <label ><input type="checkbox"/>Remember me</label>
+          <a href="#">Forget Password?</a>
+        </div>
         <button type="submit">Login</button>
+        <div className="register-link">
+          <p>Don't have an account? <a href="http://localhost:5173/register">Register</a></p>
+        </div>
         {error && error}
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Login;

@@ -1,8 +1,10 @@
+
+
 .featured {
   height: 600px;
   display: flex;
   justify-content: center;
-  background-color: #013914;
+  background:linear-gradient(to left, #418383, #9AFFFF);
   color: white;
 
   .container {
@@ -12,6 +14,7 @@
 
     .left {
       display: flex;
+      margin: auto;
       flex-direction: column;
       gap: 30px;
 
@@ -56,7 +59,7 @@
           width: 120px;
           height: 50px;
           border: none;
-          background-color: #1dbf73;
+          background-color:seagreen;
           color: white;
           align-self: flex-end;
           cursor: pointer;

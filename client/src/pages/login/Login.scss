@@ -1,7 +1,12 @@
 .login {
+  
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid(cyan);
+  padding: 20px;
+  
+
 
   form {
     width: 360px;
@@ -11,13 +16,13 @@
     gap: 20px;
 
     h1 {
-      color: gray;
+      color: black;
       margin-bottom: 20px;
     }
 
     label {
-      color: gray;
-      font-size: 18px;
+      color: rgb(11, 11, 11);
+      font-size: 20px;
     }
 
     input,
@@ -32,8 +37,14 @@
       color: white;
       font-weight: 500;
       font-size: 18px;
-      background-color: #1dbf73;
+      background-color: rgb(81, 152, 152);
       cursor: pointer;
+      border: none;
+      border-radius: 40px;
+    }
+   button[type="submit"] :hover{
+    background-color: cyan;
+
     }
 
     span{
@@ -41,4 +52,41 @@
       font-size: 12px;
     }
   }
+}
+form .remember-forget{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forget label input{
+  
+  accent-color: black;
+  margin-right: 4px;
+}
+.remember-forget a{
+  
+  color:black;
+  text-decoration: none;
+}
+.remember-forget a:hover{
+  color: cyan;
+  text-decoration: underline;
+}
+form .register-link{
+  text-emphasis-color: black;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+.register-link p a{
+  color: black;
+  
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  color: cyan;
+  text-decoration:underline;
 }

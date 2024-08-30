@@ -1,0 +1,21 @@
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    background-color: #b2ebf2; 
+  
+    &__message {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00bcd4; // Cyan
+    }
+  
+    &__redirecting {
+      font-size: 18px;
+      color: #0097a7; // Darker Cyan
+ }
+  }

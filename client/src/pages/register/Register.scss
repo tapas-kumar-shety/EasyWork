@@ -10,7 +10,6 @@
     gap: 120px;
 
     h1 {
-      color: gray;
       margin-bottom: 20px;
     }
 
@@ -23,24 +22,37 @@
       justify-content: space-between;
 
       label {
-        color: gray;
         font-size: 18px;
       }
 
       input,
       textarea {
         padding: 20px;
-        border: 1px solid rgb(216, 214, 214);
+        border: 1px solid #b2ebf2;
+        border-radius: 10px;
+        transition: border-color 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #00ACC1; /* Stronger Cyan shade */
+        box-shadow: 0 0 10px rgba(0, 172, 193, 0.5);
       }
 
       button {
         border: none;
         padding: 20px;
         color: white;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 18px;
-        background-color: #1dbf73;
+        background-color: #00ACC1; /* Stronger Cyan shade */
         cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0097a7; /* Darker Cyan shade */
       }
 
       .toggle {
@@ -70,7 +82,6 @@
           right: 0;
           bottom: 0;
           background-color: #ccc;
-          -webkit-transition: 0.4s;
           transition: 0.4s;
           border-radius: 24px;
         }
@@ -83,22 +94,19 @@
           left: 4px;
           bottom: 4px;
           background-color: white;
-          -webkit-transition: 0.4s;
           transition: 0.4s;
           border-radius: 50%;
         }
 
         input:checked + .slider {
-          background-color: #2196f3;
+          background-color: #00ACC1; /* Stronger Cyan shade */
         }
 
         input:focus + .slider {
-          box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #00ACC1;
         }
 
         input:checked + .slider:before {
-          -webkit-transform: translateX(26px);
-          -ms-transform: translateX(26px);
           transform: translateX(26px);
         }
       }

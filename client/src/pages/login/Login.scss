@@ -1,92 +1,92 @@
 .login {
   
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid(cyan);
-  padding: 20px;
-  
-
-
-  form {
-    width: 360px;
-    padding: 100px 0px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    h1 {
-      color: black;
-      margin-bottom: 20px;
-    }
-
-    label {
-      color: rgb(11, 11, 11);
-      font-size: 20px;
-    }
-
-    input,
-    textarea {
-      padding: 20px;
-      border: 1px solid rgb(216, 214, 214);
-    }
-
-    button {
-      border: none;
-      padding: 20px;
-      color: white;
-      font-weight: 500;
-      font-size: 18px;
-      background-color: rgb(81, 152, 152);
-      cursor: pointer;
-      border: none;
-      border-radius: 40px;
-    }
-   button[type="submit"] :hover{
-    background-color: cyan;
-
-    }
-
-    span{
-      color: red;
-      font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid(cyan);
+    padding: 20px;
+    
+  
+  
+    form {
+      width: 360px;
+      padding: 100px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      h1 {
+        color: black;
+        margin-bottom: 20px;
+      }
+  
+      label {
+        color: rgb(11, 11, 11);
+        font-size: 20px;
+      }
+  
+      input,
+      textarea {
+        padding: 20px;
+        border: 1px solid rgb(216, 214, 214);
+      }
+  
+      button {
+        border: none;
+        padding: 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: rgb(81, 152, 152);
+        cursor: pointer;
+        border: none;
+        border-radius: 40px;
+      }
+     button[type="submit"] :hover{
+      background-color: cyan;
+  
+      }
+  
+      span{
+        color: red;
+        font-size: 12px;
+      }
     }
   }
-}
-form .remember-forget{
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin: -15px 0 15px;
-}
-.remember-forget label input{
+  form .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forget label input{
+    
+    accent-color: black;
+    margin-right: 4px;
+  }
+  .remember-forget a{
+    
+    color:black;
+    text-decoration: none;
+  }
+  .remember-forget a:hover{
+    color: cyan;
+    text-decoration: underline;
+  }
+  form .register-link{
+    text-emphasis-color: black;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
   
-  accent-color: black;
-  margin-right: 4px;
-}
-.remember-forget a{
-  
-  color:black;
-  text-decoration: none;
-}
-.remember-forget a:hover{
-  color: cyan;
-  text-decoration: underline;
-}
-form .register-link{
-  text-emphasis-color: black;
-  font-size: 14px;
-  text-align: center;
-  margin: 20px 0 15px;
-
-}
-.register-link p a{
-  color: black;
-  
-  text-decoration: none;
-  font-weight: 600;
-}
-.register-link p a:hover{
-  color: cyan;
-  text-decoration:underline;
-}
+  }
+  .register-link p a{
+    color: black;
+    
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    color: cyan;
+    text-decoration:underline;
+  }

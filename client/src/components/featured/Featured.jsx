@@ -10,6 +10,8 @@ function Featured() {
 
   const handleSubmit = () => {
     navigate(`/gigs?search=${input}`);
+    // navigate(`/gigs?search="video editing"`);
+
   };
 
   return (

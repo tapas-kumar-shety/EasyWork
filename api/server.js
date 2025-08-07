@@ -18,7 +18,7 @@ mongoose.set("strictQuery", true);
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
-    console.log("mongodb+srv://ktapaskumar666:ZrhDeWvMM78WhHFe@cluster0.cucex.mongodb.net/");
+    console.log("the database server is now connected");
   } catch (error) {
     console.log(error);
   }
